@@ -192,6 +192,9 @@ void openFiles(int argc, char *argv[]){
         printInfo();
         exit(EXIT_FAILURE);
     }
+ 
+    if(test == 1 && perm == 0)
+        fprintf(stderr,"Warning: When -t 1, number of permutation cycles are needed to estimate P-values\n\n");
     
     if(test == 0 && perm > 0)
         fprintf(stderr,"Warning: Permutations are ignored when performing a candidate gene test\n\n");
