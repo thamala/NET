@@ -1,5 +1,5 @@
 # NET
-Network Enrichment Test
+Network Enrichment Test, program used in Hämälä et al. 2020 MBE (https://doi.org/10.1093/molbev/msz206)
 
 Compiling:  
 gcc NET.c -o NET -lm
